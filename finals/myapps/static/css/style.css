@@ -1,0 +1,90 @@
+/* Reset some default styles */
+html, body, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set up grid layout */
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;
+    float: right;
+}
+
+.menu li {
+    margin: 10px 0;
+    display: block;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu-button {
+    display: none;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 2;
+
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+/* Main content styles */
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Media queries for responsive design */
+@media screen and (max-width: 768px) {
+    .menu-button {
+        display: block;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .menu li {
+        margin: 10px;
+    }
+}
+
